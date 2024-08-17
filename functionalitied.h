@@ -10,5 +10,6 @@ void CreateObject(DataContainer& data);
 //Creating function to add data
 void Display(const DataContainer &data);
 //Display Function to display function
+int Engine_size_sum(const DataContainer &data);
 
 #endif // FUNCTIONALITIED_H
