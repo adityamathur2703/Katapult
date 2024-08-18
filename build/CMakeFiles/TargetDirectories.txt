@@ -1,2 +1,0 @@
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/build/CMakeFiles/rebuild_cache.dir
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/build/CMakeFiles/edit_cache.dir
