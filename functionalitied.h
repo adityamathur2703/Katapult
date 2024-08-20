@@ -3,7 +3,8 @@
 #include<vector>
 #include<memory>
 #include<future>
-#include"Vehicle.h"
+#include "Vehicle.h"
+#include<iostream>
 using DataContainer=std::vector<std::shared_ptr<Vehicle>>;
 //Declaration Data Constainer
 void CreateObject(DataContainer& data);

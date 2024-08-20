@@ -1,6 +1,12 @@
 #include "Vehicle.h"
-Vehicle::Vehicle(const std::string make,  const std::string model,  unsigned int year,  float size,  Transmission transmission_type) : Vehicle_Make{make}, Vehilce_Model{model}, Year{year}, Engine_Size{size}, Tranmission_Type{transmission_type}
-{
+
+Vehicle::Vehicle(const std::string make,  const std::string model,  unsigned int year,  float size,  Transmission transmission_type) {
+    Vehicle_Make =make;
+    Vehilce_Model =model;
+    Year =year;
+    Engine_Size=size; 
+    Tranmission_Type=transmission_type;
+
 }
 //<< operator overload
 std::ostream &operator<<(std::ostream &os, const Vehicle &rhs)
