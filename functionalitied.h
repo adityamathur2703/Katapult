@@ -5,9 +5,9 @@
 #include<future>
 #include"Vehicle.h"
 using DataContainer=std::vector<std::shared_ptr<Vehicle>>;
-//creating Data Constainer
+//Declaration Data Constainer
 void CreateObject(DataContainer& data);
-//Creating function to add data
+//Declaration function to add data
 void Display(const DataContainer &data);
 //Display Function to display function
 
