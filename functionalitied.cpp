@@ -18,3 +18,12 @@ void Display(const DataContainer &data)
     }
     //display all object in conatier
 }
+
+int sumEnginePower(int a,int b)
+{
+    // int sum=0;
+    // for(auto i:data){
+    //     sum+=i->engineSize();
+    // }
+    return a+b;
+}

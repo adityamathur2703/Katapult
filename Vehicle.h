@@ -48,6 +48,5 @@ public:
     //stream overloader
 };
 
-std::string TransmisstionTypeStr(Transmission type);
 
 #endif // VEHICLE_H

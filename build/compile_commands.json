@@ -1,0 +1,19 @@
+[
+{
+  "directory": "/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/Vehicle.dir/Vehicle.cpp.o -c /home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Vehicle.cpp",
+  "file": "/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Vehicle.cpp"
+},
+
+{
+  "directory": "/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/app.dir/Test.cpp.o -c /home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Test.cpp",
+  "file": "/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Test.cpp"
+},
+
+{
+  "directory": "/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/build",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/functionalities.dir/functionalitied.cpp.o -c /home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/functionalitied.cpp",
+  "file": "/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/functionalitied.cpp"
+}
+]

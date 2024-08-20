@@ -11,5 +11,5 @@ void CreateObject(DataContainer& data);
 //Declaration function to add data
 void Display(const DataContainer &data);
 //Display Function to display function
-
+int sumEnginePower(int a,int b);
 #endif // FUNCTIONALITIED_H
