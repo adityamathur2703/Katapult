@@ -9,7 +9,7 @@ int main(void)
         //Object
         Display(data);
         //Display
-        std::cout<<Engine_size_sum(data)<<"\n";
+       
     
     return 0;
 }
