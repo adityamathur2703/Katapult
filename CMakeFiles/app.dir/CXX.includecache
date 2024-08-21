@@ -6,31 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Test.cpp
-functionalitied.h
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/functionalitied.h
-gtest/gtest.h
--
-
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Transmission.h
-
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Vehicle.h
-iostream
--
-string
--
-Transmission.h
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Transmission.h
-
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/functionalitied.h
-vector
--
-memory
--
-future
--
-Vehicle.h
-/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/Vehicle.h
-iostream
--
-

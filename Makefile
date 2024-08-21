@@ -135,6 +135,19 @@ Vehicle/fast:
 .PHONY : Vehicle/fast
 
 #=============================================================================
+# Target rules for targets named DataContainer
+
+# Build rule for target.
+DataContainer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DataContainer
+.PHONY : DataContainer
+
+# fast build rule for target.
+DataContainer/fast:
+	$(MAKE) -f CMakeFiles/DataContainer.dir/build.make CMakeFiles/DataContainer.dir/build
+.PHONY : DataContainer/fast
+
+#=============================================================================
 # Target rules for targets named app
 
 # Build rule for target.
@@ -159,6 +172,33 @@ functionalities: cmake_check_build_system
 functionalities/fast:
 	$(MAKE) -f CMakeFiles/functionalities.dir/build.make CMakeFiles/functionalities.dir/build
 .PHONY : functionalities/fast
+
+DataInitialized.o: DataInitialized.cpp.o
+
+.PHONY : DataInitialized.o
+
+# target to build an object file
+DataInitialized.cpp.o:
+	$(MAKE) -f CMakeFiles/DataContainer.dir/build.make CMakeFiles/DataContainer.dir/DataInitialized.cpp.o
+.PHONY : DataInitialized.cpp.o
+
+DataInitialized.i: DataInitialized.cpp.i
+
+.PHONY : DataInitialized.i
+
+# target to preprocess a source file
+DataInitialized.cpp.i:
+	$(MAKE) -f CMakeFiles/DataContainer.dir/build.make CMakeFiles/DataContainer.dir/DataInitialized.cpp.i
+.PHONY : DataInitialized.cpp.i
+
+DataInitialized.s: DataInitialized.cpp.s
+
+.PHONY : DataInitialized.s
+
+# target to generate assembly for a file
+DataInitialized.cpp.s:
+	$(MAKE) -f CMakeFiles/DataContainer.dir/build.make CMakeFiles/DataContainer.dir/DataInitialized.cpp.s
+.PHONY : DataInitialized.cpp.s
 
 Test.o: Test.cpp.o
 
@@ -251,8 +291,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... Vehicle"
+	@echo "... DataContainer"
 	@echo "... app"
 	@echo "... functionalities"
+	@echo "... DataInitialized.o"
+	@echo "... DataInitialized.i"
+	@echo "... DataInitialized.s"
 	@echo "... Test.o"
 	@echo "... Test.i"
 	@echo "... Test.s"

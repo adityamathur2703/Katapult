@@ -59,6 +59,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Vehicle.dir/DependInfo.cmake"
+  "CMakeFiles/DataContainer.dir/DependInfo.cmake"
   "CMakeFiles/app.dir/DependInfo.cmake"
   "CMakeFiles/functionalities.dir/DependInfo.cmake"
   )

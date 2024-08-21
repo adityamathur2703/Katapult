@@ -1,15 +1,5 @@
 #include "functionalitied.h"
 #include<iostream>
-void CreateObject(DataContainer &data)
-{
-    data.push_back(std::make_shared<Vehicle>("Volvo","XC90",2010,3.5,Transmission::AUTOMATIC));
-    data.push_back(std::make_shared<Vehicle>("Audi","A8",2011,3.5,Transmission::CVT));
-    data.push_back(std::make_shared<Vehicle>("Honda","CIVIC",2012,3.8,Transmission::MANUAL));
-    data.push_back(std::make_shared<Vehicle>("BMW","X7",2012,4,Transmission::AUTOMATIC));
-    data.push_back(std::make_shared<Vehicle>("Lamborgini","Aventador",2009,5.7,Transmission::CVT));
-    //data data in object
-    
-}
 
 void Display(const DataContainer &data)
 {
@@ -19,11 +9,11 @@ void Display(const DataContainer &data)
     //display all object in conatier
 }
 
-int sumEnginePower(int a,int b)
+int sumEnginePower(const DataContainer &data)
 {
-    // int sum=0;
-    // for(auto i:data){
-    //     sum+=i->engineSize();
-    // }
-    return a+b;
+    int sum=0;
+    for(auto i:data){
+        sum+=i->engineSize();
+    }
+  return sum;
 }

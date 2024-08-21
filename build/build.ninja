@@ -96,13 +96,44 @@ build libVehicle.a: CXX_STATIC_LIBRARY_LINKER__Vehicle CMakeFiles/Vehicle.dir/Ve
   TARGET_PDB = Vehicle.a.dbg
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target DataContainer
+
+
+#############################################
+# Order-only phony target for DataContainer
+
+build cmake_object_order_depends_target_DataContainer: phony || CMakeFiles/DataContainer.dir
+
+build CMakeFiles/DataContainer.dir/DataInitialized.cpp.o: CXX_COMPILER__DataContainer ../DataInitialized.cpp || cmake_object_order_depends_target_DataContainer
+  DEP_FILE = CMakeFiles/DataContainer.dir/DataInitialized.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/DataContainer.dir
+  OBJECT_FILE_DIR = CMakeFiles/DataContainer.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target DataContainer
+
+
+#############################################
+# Link the static library libDataContainer.a
+
+build libDataContainer.a: CXX_STATIC_LIBRARY_LINKER__DataContainer CMakeFiles/DataContainer.dir/DataInitialized.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/DataContainer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libDataContainer.a
+  TARGET_PDB = DataContainer.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target app
 
 
 #############################################
 # Order-only phony target for app
 
-build cmake_object_order_depends_target_app: phony || cmake_object_order_depends_target_Vehicle cmake_object_order_depends_target_functionalities
+build cmake_object_order_depends_target_app: phony || cmake_object_order_depends_target_DataContainer cmake_object_order_depends_target_Vehicle cmake_object_order_depends_target_functionalities
 
 build CMakeFiles/app.dir/Test.cpp.o: CXX_COMPILER__app ../Test.cpp || cmake_object_order_depends_target_app
   DEP_FILE = CMakeFiles/app.dir/Test.cpp.o.d
@@ -118,9 +149,9 @@ build CMakeFiles/app.dir/Test.cpp.o: CXX_COMPILER__app ../Test.cpp || cmake_obje
 #############################################
 # Link the executable app
 
-build app: CXX_EXECUTABLE_LINKER__app CMakeFiles/app.dir/Test.cpp.o | /usr/local/lib/libgtest.a libfunctionalities.a libVehicle.a || libVehicle.a libfunctionalities.a
+build app: CXX_EXECUTABLE_LINKER__app CMakeFiles/app.dir/Test.cpp.o | /usr/local/lib/libgtest.a libfunctionalities.a libVehicle.a libDataContainer.a || libDataContainer.a libVehicle.a libfunctionalities.a
   FLAGS = -g
-  LINK_LIBRARIES = /usr/local/lib/libgtest.a  -lpthread  libfunctionalities.a  libVehicle.a  -lpthread
+  LINK_LIBRARIES = /usr/local/lib/libgtest.a  -lpthread  libfunctionalities.a  libVehicle.a  libDataContainer.a  -lpthread
   OBJECT_DIR = CMakeFiles/app.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -161,6 +192,8 @@ build libfunctionalities.a: CXX_STATIC_LIBRARY_LINKER__functionalities CMakeFile
 # =============================================================================
 # Target aliases.
 
+build DataContainer: phony libDataContainer.a
+
 build Vehicle: phony libVehicle.a
 
 build functionalities: phony libfunctionalities.a
@@ -173,7 +206,7 @@ build functionalities: phony libfunctionalities.a
 #############################################
 # Folder: /home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/build
 
-build all: phony libVehicle.a app libfunctionalities.a
+build all: phony libVehicle.a libDataContainer.a app libfunctionalities.a
 
 # =============================================================================
 # Built-in targets

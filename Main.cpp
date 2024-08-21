@@ -1,16 +1,15 @@
 #include "functionalitied.h"
+#include "DataInitialized.h"
 #include<gtest/gtest.h>
 
 int main(void)
 {
 
-        DataContainer data;
-        
-        //Container
-        CreateObject(data);
-        //Object
+        DataContainer data = initalized();
+
+        // Container
+
+        // Object
         Display(data);
-        //Display
-  
-    
+        // Display
 }

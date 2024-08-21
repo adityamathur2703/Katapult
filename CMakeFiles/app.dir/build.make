@@ -82,6 +82,7 @@ app: CMakeFiles/app.dir/build.make
 app: /usr/local/lib/libgtest.a
 app: libfunctionalities.a
 app: libVehicle.a
+app: libDataContainer.a
 app: CMakeFiles/app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kpit/Desktop/TEST_KATAPULT/Day_2/Ques_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)

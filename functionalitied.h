@@ -6,10 +6,9 @@
 #include "Vehicle.h"
 #include<iostream>
 using DataContainer=std::vector<std::shared_ptr<Vehicle>>;
-//Declaration Data Constainer
-void CreateObject(DataContainer& data);
+
 //Declaration function to add data
 void Display(const DataContainer &data);
 //Display Function to display function
-int sumEnginePower(int a,int b);
+int sumEnginePower(const DataContainer& data);
 #endif // FUNCTIONALITIED_H
